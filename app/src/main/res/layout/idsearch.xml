@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.linepayjunior.LINEmini.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#041F5B" />
+
+    <TextView
+        android:id="@+id/textView_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/toolbar_id"
+        android:layout_alignEnd="@+id/toolbar_id"
+        android:layout_alignBottom="@+id/toolbar_id"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="8dp"
+        android:text="ID Search"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <RelativeLayout
+        android:id="@+id/layout_gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_id"
+        android:background="#E9E7E5E5">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="95dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="20dp"
+            android:background="#FFFFFF">
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="377dp"
+            android:layout_height="64dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="친구 ID를 입력하세요"
+            android:textAlignment="viewStart"
+            android:textColor="#A2A0A0"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="63dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="20dp"
+            android:background="#00FFFFFF"
+            app:srcCompat="@android:drawable/ic_search_category_default" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
